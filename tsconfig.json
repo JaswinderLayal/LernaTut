@@ -10,6 +10,7 @@
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
+      "@quilt/*": ["packages/*/src"],
       "*": ["node_modules", "packages"]
     }
   },

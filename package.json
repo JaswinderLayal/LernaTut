@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "prebuild": "tsc",
+    "prebuild": "lerna exec 'tsc --project ./tsconfig.build.json'",
     "fix": "yarn lint:ts --fix",
     "test": "jest",
     "lint": "run-p -c lint:*",
@@ -11,6 +11,8 @@
     "commit": "git-cz",
     "prerelease": "yarn build",
     "release": "lerna publish",
+    "build:declarations": "lerna exec --parallel 'tsc --project ./tsconfig.build.json'",
+    "postbuild": "yarn build:declarations",
     "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --copy-files --source-maps --extensions .ts,.tsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'"
   },
   "workspaces": [

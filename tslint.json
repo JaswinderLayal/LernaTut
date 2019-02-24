@@ -14,5 +14,8 @@
       "avoid-template",
       "jsx-double"
     ]
+  },
+  "linterOptions": {
+    "exclude": ["**/*.d.ts"]
   }
 }

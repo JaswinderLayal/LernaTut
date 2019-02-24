@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "prebuild": "tsc --project ./tsconfig.build.json & rm -rf packages/*/dist",
+    "prebuild": "rm -rf packages/*/dist",
     "clean": "rm -rf packages/*/dist",
     "fix": "yarn lint:ts --fix",
     "test": "jest",
@@ -12,8 +12,8 @@
     "commit": "git-cz",
     "prerelease": "yarn build",
     "release": "lerna publish",
-    "build:declarations": "lerna exec 'tsc --project ./tsconfig.build.json'",
-    "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --copy-files --source-maps --extensions .ts,.tsx --config-file ../../babel.config.js  --no-comments'"
+    "build:declarations": "lerna exec  --parallel  'tsc --project ./tsconfig.build.json'",
+    "build": "tsc --project ./tsconfig.build.json & lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --copy-files --source-maps --extensions .ts,.tsx --config-file ../../babel.config.js  --no-comments'"
   },
   "workspaces": [
     "packages/*"

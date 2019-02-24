@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
+  "scripts": {
+    "tsc": "tsc --project tsconfig.build.json"
+  },
   "peerDependencies": {
     "react": "^16.8.3",
     "react-dom": "^16.8.3"

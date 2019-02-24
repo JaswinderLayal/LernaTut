@@ -6,5 +6,5 @@
       "declaration": true
     },
     "exclude": [ "**/*.test.*", "dist"],
-    "include": []
+    "include": ["packages"]
   }

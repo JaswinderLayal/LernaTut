@@ -9,6 +9,8 @@
     "lint:ts": "tslint 'packages/**/*.ts{,x}'",
     "lint:css": "stylelint 'packages/**/*.ts{,x}'",
     "commit": "git-cz",
+    "prerelease": "yarn build",
+    "release": "lerna publish",
     "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --copy-files --source-maps --extensions .ts,.tsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'"
   },
   "workspaces": [

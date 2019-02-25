@@ -1,21 +1,6 @@
-15 error Error: Command failed: git remote update
-15 error remote: Invalid username or password.
-15 error fatal: Authentication failed for 'https://github.com/JaswinderLayal/LernaTut.git/'
-15 error error: Could not fetch origin
-15 error Auto packing the repository in background for optimum performance.
-15 error See "git help gc" for manual housekeeping.
-15 error error: The last gc run reported the following. Please correct the root cause
-15 error and remove .git/gc.log.
-15 error Automatic cleanup will not be performed until the file is removed.
-15 error
-15 error warning: There are too many unreachable loose objects; run 'git prune' to remove them.
-15 error
-15 error
-15 error Fetching origin
-15 error
-15 error     at makeError (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/execa/index.js:174:9)
-15 error     at Function.module.exports.sync (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/execa/index.js:338:15)
-15 error     at Object.execSync (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/@lerna/child-process/index.js:22:16)
-15 error     at updateRemote (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/@lerna/version/lib/is-behind-upstream.js:26:16)
-15 error     at isBehindUpstream (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/@lerna/version/lib/is-behind-upstream.js:11:3)
-15 error     at VersionCommand.initialize (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/@lerna/version/index.js:149:9)
+51 error Error: Command failed: git push --follow-tags --no-verify origin master
+51 error remote: Invalid username or password.
+51 error fatal: Authentication failed for 'https://github.com/JaswinderLayal/LernaTut.git/'
+51 error
+51 error     at makeError (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/execa/index.js:174:9)
+51 error     at Promise.all.then.arr (/Users/jaswindersinghlayal/Desktop/practice/lernaTesting/node_modules/execa/index.js:278:16)

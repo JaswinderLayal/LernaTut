@@ -1,8 +1,8 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "scripts": {
-    "prebuild": "rm -rf packages/*/dist",
+    "prebuild": "lerna run tsc",
     "clean": "rm -rf packages/*/dist",
     "fix": "yarn lint:ts --fix",
     "test": "jest",

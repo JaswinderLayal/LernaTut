@@ -31,7 +31,7 @@ const Breadcrumb = props => {
     className: "quilt-breadcrumb-divider",
     style: {
       color: separatorColour,
-      margin: '0 20px'
+      margin: '0 10px'
     }
   }, divider), "\xA0")));
 };

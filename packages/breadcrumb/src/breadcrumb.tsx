@@ -35,7 +35,7 @@ const Breadcrumb = (props: IProps) => {
             ) : (
               <span
                 className="quilt-breadcrumb-divider"
-                style={{ color: separatorColour, margin: '0 20px' }}
+                style={{ color: separatorColour, margin: '0 10px' }}
               >
                 {divider}
               </span>

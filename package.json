@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": false,
+  "private": true,
   "scripts": {
     "prebuild": "lerna run tsc",
     "clean": "rm -rf packages/*/dist",
